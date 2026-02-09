@@ -1,38 +1,38 @@
-// import { createBrowserRouter, Navigate } from "react-router-dom";
-// import { AppRoutes } from "./app-routes";
-// import {
-//   AppLayout,
-//   HomePage,
-//   LoginPage,
-//   NotFoundPage,
-//   PricingPage,
-//   ProductPage,
-// } from "@/pages";
+import { createBrowserRouter, Navigate } from "react-router-dom";
+import { AppRoutes } from "./app-routes";
+import {
+  HomePage,
+  //   AppLayout,
+  //   LoginPage,
+  NotFoundPage,
+  PricingPage,
+  ProductPage,
+} from "@/pages";
 // import { CitiesList } from "@/components/pages/AppLayout/Sidebar/CitiesList";
 // import { CountriesList } from "@/components/pages/AppLayout/Sidebar/CountriesList";
 // import { City } from "@/components/pages/AppLayout/Sidebar/City";
 // import { Form } from "@/components/pages/AppLayout/Sidebar/Form";
 // import { ProtectedRoutes } from "./ProtectedRoutes";
 
-// export const router = createBrowserRouter([
-//   { path: AppRoutes.home, element: <HomePage /> },
-//   { path: AppRoutes.product, element: <ProductPage /> },
-//   { path: AppRoutes.pricing, element: <PricingPage /> },
-//   {
-//     path: AppRoutes.app,
-//     element: (
-//       <ProtectedRoutes>
-//         <AppLayout />
-//       </ProtectedRoutes>
-//     ),
-//     children: [
-//       { index: true, element: <Navigate replace to="cities" /> },
-//       { path: AppRoutes.cities, element: <CitiesList /> },
-//       { path: AppRoutes.cityById, element: <City /> },
-//       { path: AppRoutes.countries, element: <CountriesList /> },
-//       { path: AppRoutes.form, element: <Form /> },
-//     ],
-//   },
-//   { path: AppRoutes.login, element: <LoginPage /> },
-//   { path: AppRoutes.notFound, element: <NotFoundPage /> }, // 404
-// ]);
+export const router = createBrowserRouter([
+  { path: AppRoutes.home, element: <HomePage /> },
+  { path: AppRoutes.product, element: <ProductPage /> },
+  { path: AppRoutes.pricing, element: <PricingPage /> },
+  //   {
+  // path: AppRoutes.app,
+  // element: (
+  //   <ProtectedRoutes>
+  // <AppLayout />
+  //   </ProtectedRoutes>
+  // ),
+  // children: [
+  //   { index: true, element: <Navigate replace to="cities" /> },
+  //   { path: AppRoutes.cities, element: <CitiesList /> },
+  //   { path: AppRoutes.cityById, element: <City /> },
+  //   { path: AppRoutes.countries, element: <CountriesList /> },
+  //   { path: AppRoutes.form, element: <Form /> },
+  // ],
+  //   },
+  //   { path: AppRoutes.login, element: <LoginPage /> },
+  { path: AppRoutes.notFound, element: <NotFoundPage /> }, // 404
+]);
